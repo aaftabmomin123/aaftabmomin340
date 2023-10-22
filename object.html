@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>object creation</title>
+</head>
+<body>
+	<script type="text/javascript">
+	const os={
+		name:'aaftab',
+		native:'kolhapur',
+		branch:'e&tc',
+		cpga:9.14,
+		subj:["sql","java","web development"]
+		}
+		//document.write(o.subj[0,subj.length()])
+		//  for(let i=0;i<os.subj.length();i++)
+		// {
+		// 	document.write(subj[i])
+		// }
+		function info(name,ntv,branch,subj)
+		{
+			this.name=name;
+			this.ntv=ntv;
+			this.branch=branch;
+			this.subj=subj;
+
+		}
+		let obj=new info('aaftab','delhi','civil',["sql","java","web development"]);
+		document.write(obj.name);
+
+
+		class app
+		{
+			constructor(name,ntv,branch)
+			{
+				this.name=name;
+				this.ntv=ntv;
+				this.branch=branch;
+			}
+			displayInfo()
+			{
+				document.write(`hello my name ${this.name} and i have belog to ${this.ntv} and my branch is ${this.branch}`);
+			}
+		}
+		let ob=new app('Aaftab','mumbai','computer science');
+		ob.displayInfo();
+		
+
+	</script>
+
+</body>
+</html>
